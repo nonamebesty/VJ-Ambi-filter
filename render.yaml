@@ -1,0 +1,9 @@
+services:
+  # A Docker web service
+  - type: web
+    name: vj-ambi-filter
+    env: python
+    runtime:
+      version:3.10
+    startCommand: python3 bot.py
+    buildCommand: pip3 install -U -r requirements.txt
